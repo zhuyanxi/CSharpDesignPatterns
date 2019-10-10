@@ -6,19 +6,15 @@ namespace PatternBeginning
 {
     public class MallardDuck : Duck
     {
+        public MallardDuck()
+        {
+            quackBehavior = new QuackNormal();
+            flyBehavior = new FlyWithWings();
+        }
+
         public override void Display()
         {
-            throw new NotImplementedException();
-        }
-
-        public void Fly()
-        {
-            Console.WriteLine($"Mallard Duck Fly");
-        }
-
-        public void Quack()
-        {
-            Console.WriteLine($"Mallard Duck Quack");
+            Console.WriteLine($"Display a real mallard duck.");
         }
     }
 }

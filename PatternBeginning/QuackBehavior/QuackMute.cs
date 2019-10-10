@@ -4,11 +4,11 @@ using System.Text;
 
 namespace PatternBeginning
 {
-    public class QuackNormal : IQuack
+    public class QuackMute : IQuack
     {
         public void Quack()
         {
-            Console.WriteLine($"Quack");
+            Console.WriteLine($"I can not quack<<silence>>");
         }
     }
 }

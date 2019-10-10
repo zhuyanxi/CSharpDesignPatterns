@@ -8,7 +8,7 @@ namespace PatternBeginning
     {
         public void Fly()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"I fly with wings!");
         }
     }
 }

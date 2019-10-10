@@ -4,17 +4,17 @@ using System.Text;
 
 namespace PatternBeginning
 {
-    public class RubberDuck : Duck
+    public class ModelDuck : Duck
     {
-        public RubberDuck()
+        public ModelDuck()
         {
             flyBehavior = new FlyNoWay();
-            quackBehavior = new QuackSqueak();
+            quackBehavior = new QuackMute();
         }
 
         public override void Display()
         {
-            Console.WriteLine($"Display a rubber duck.");
+            Console.WriteLine($"Display a model duck.");
         }
     }
 }
