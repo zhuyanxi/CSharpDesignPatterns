@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternBeginning", "PatternBeginning\PatternBeginning.csproj", "{B8DF120F-4E0F-4010-B508-8E021FF7D4A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternBeginning", "PatternBeginning\PatternBeginning.csproj", "{B8DF120F-4E0F-4010-B508-8E021FF7D4A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverPattern", "ObserverPattern\ObserverPattern.csproj", "{C9570BDD-43BD-4691-B321-CF91536C7F28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B8DF120F-4E0F-4010-B508-8E021FF7D4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8DF120F-4E0F-4010-B508-8E021FF7D4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8DF120F-4E0F-4010-B508-8E021FF7D4A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9570BDD-43BD-4691-B321-CF91536C7F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9570BDD-43BD-4691-B321-CF91536C7F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9570BDD-43BD-4691-B321-CF91536C7F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9570BDD-43BD-4691-B321-CF91536C7F28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
