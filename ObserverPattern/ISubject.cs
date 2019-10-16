@@ -10,9 +10,9 @@ namespace ObserverPattern
     /// </summary>
     public interface ISubject
     {
-        void RegisterObserver(IObserver observer);
+        void RegisterObserver(IMyObserver observer);
 
-        void RemoveObserver(IObserver observer);
+        void RemoveObserver(IMyObserver observer);
 
         void NotifyObserver();
     }

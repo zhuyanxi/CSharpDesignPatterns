@@ -4,9 +4,17 @@ using System.Text;
 
 namespace ObserverPattern.Observer
 {
-    public class ForecastDisplay : IObserver, IDisplayElement
+    public class ForecastDisplay : IMyObserver, IDisplayElement
     {
-        public void Update(float temp, float humidity, float pressure)
+        private ISubject _weatherData;
+
+        public ForecastDisplay(ISubject subject)
+        {
+            _weatherData = subject;
+            _weatherData.RegisterObserver(this);
+        }
+
+        public void Update(float temperature, float humidity, float pressure)
         {
             throw new NotImplementedException();
         }

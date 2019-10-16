@@ -4,16 +4,28 @@ using System.Text;
 
 namespace ObserverPattern.Observer
 {
-    public class CurrentConditionsDisplay : IObserver, IDisplayElement
+    public class CurrentConditionsDisplay : IMyObserver, IDisplayElement
     {
-        public void Update(float temp, float humidity, float pressure)
+        private float _temperature;
+        private float _humidity;
+        private ISubject _weatherData;
+
+        public CurrentConditionsDisplay(ISubject subject)
         {
-            throw new NotImplementedException();
+            _weatherData = subject;
+            _weatherData.RegisterObserver(this);
+        }
+
+        public void Update(float temperature, float humidity, float pressure)
+        {
+            _temperature = temperature;
+            _humidity = humidity;
+            Display();
         }
 
         public void Display()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Current conditions: {_temperature}F degrees and {_humidity}% humidity");
         }
     }
 }

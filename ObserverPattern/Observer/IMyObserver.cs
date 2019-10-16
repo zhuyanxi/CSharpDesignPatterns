@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ObserverPattern.Observer
+namespace ObserverPattern
 {
     /// <summary>
     /// 观察者模式：观察者接口
     /// </summary>
-    public interface IObserver
+    public interface IMyObserver
     {
-        void Update(float temp, float humidity, float pressure);
+        void Update(float temperature, float humidity, float pressure);
     }
 }
