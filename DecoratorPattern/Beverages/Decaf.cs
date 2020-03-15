@@ -12,5 +12,10 @@ namespace DecoratorPattern.Beverages
         {
             return 2.59;
         }
+
+        public override string GetDescription()
+        {
+            return description;
+        }
     }
 }

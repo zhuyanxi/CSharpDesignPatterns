@@ -1,7 +1,7 @@
 ﻿using System;
 namespace DecoratorPattern.Condiments
 {
-    public class Whip:CondimentDecorator
+    public class Whip : CondimentDecorator
     {
         private readonly Beverage _beverage;
 
